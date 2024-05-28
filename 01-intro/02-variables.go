@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
+// unused variables are allowed at package scope
+var unUsed = -9999
+
 func main() {
 	/*
 		var userName string
@@ -105,5 +108,8 @@ func main() {
 	x, y, msg := 100, 200, "Sum of %d and %d is %d\n"
 	result := x + y
 	fmt.Printf(msg, x, y, result)
+
+	// unused variables are not allowed at function scope
+	// var unUsed = -9999
 
 }

@@ -121,12 +121,21 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
     - rune (alias for int32, unicode code point)
 
 ## Variables
-To declare variables
+### using 'var' (To declare variables)
 ```go
     var [var_name] [data_type]
     var [var_1], [var_2] [data_type]
 ```
-To declare & initialize
+
+### using ':=' (To declare & initialize)
 ```go
     [var_name] := [data]
 ```
+
+### Function Scope
+- Can use :=
+- Cannot have unused variables
+
+### Package Scope
+- CANNOT use :=
+- Can have unused variables
