@@ -139,3 +139,6 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 ### Package Scope
 - CANNOT use :=
 - Can have unused variables
+
+## IOTA 
+    - auto generated constants
