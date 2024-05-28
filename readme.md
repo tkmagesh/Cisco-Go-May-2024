@@ -56,12 +56,40 @@
         - "sync/atomic" packages
 
 ## Compile & Execute
-Compile
+### Compile
 ```shell
 go build [file_name.go]
+
+go build -o [binary_name] [file_name.go]
 ```
 
-Compile & Execute
+### Compile & Execute
 ```shell
 go run [file_name.go]
 ```
+
+### To list all the environment variables
+```shell
+go env
+```
+
+### To list a few environment variables
+```shell
+go env [var_1] [var_2]
+```
+
+### Env variables for cross compilation
+- GOOS
+- GOARCH
+
+### To get the list of supported platforms (for compilation)
+```shell
+go tool dist list
+```
+
+### To cross compile
+```shell
+GOOS=[target_os] GOARCH=[target_arch] go build [filename.go]
+
+ex:
+GOOS=linux GOARCH=amd64 go build 01-hello-world.go
