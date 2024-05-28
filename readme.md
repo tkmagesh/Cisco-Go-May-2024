@@ -155,3 +155,4 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - Higher Order Functions
     - Pass functions as arguments 
     - Return functions as return values
+- Deferred functions (functions whose executions are postponed)
