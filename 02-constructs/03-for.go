@@ -40,6 +40,16 @@ func main() {
 		}
 	}
 
+	fmt.Println("Ver 6.0")
+	for i := range 10 {
+		fmt.Println(i)
+	}
+
+	fmt.Println("Ver 7.0")
+	for range 10 {
+		fmt.Println("do something")
+	}
+
 	// Using labels
 	fmt.Println("Using labels")
 X_LOOP:

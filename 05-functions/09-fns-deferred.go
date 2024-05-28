@@ -10,9 +10,6 @@ func main() {
 	f1()
 	fmt.Println("main completed")
 
-	for range 10 {
-		fmt.Println("do something")
-	}
 }
 
 func f1() {
