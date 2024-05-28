@@ -93,3 +93,40 @@ GOOS=[target_os] GOARCH=[target_arch] go build [filename.go]
 
 ex:
 GOOS=linux GOARCH=amd64 go build 01-hello-world.go
+```
+
+## Data types
+- string
+- bool
+- Integers
+    - int8
+    - int16
+    - int32
+    - int64
+    - int
+- Unsigned Integers
+    - uint8
+    - uint16
+    - uint32
+    - uint64
+    - uint
+- Floating point
+    - float32
+    - float64
+- Complex Types
+    - complex64 [ real (float32) + imaginary (float32) ]
+    - complex128 [ real (float64) + imaginary (float64) ]
+- Type aliases
+    - byte (alias for uint8)
+    - rune (alias for int32, unicode code point)
+
+## Variables
+To declare variables
+```go
+    var [var_name] [data_type]
+    var [var_1], [var_2] [data_type]
+```
+To declare & initialize
+```go
+    [var_name] := [data]
+```
