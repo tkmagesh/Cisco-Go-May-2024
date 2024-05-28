@@ -20,6 +20,38 @@
 
 ## Software Requirements
 - Go tools (https://go.dev/dl)
+    - Verification
+        ```go
+        go version
+        ```
 - [Visual Studio Code](https://code.visualstudio.com)
 - [Go extensions for VSCode](https://marketplace.visualstudio.com/items?itemName=golang.Go)
 - Any Git Client
+
+## Why Go?
+- Simplicity
+    - ONLY 25 keywords
+    - Not(s)
+        - No access modifiers (no public/private etc)
+        - No classes (ONLY structs)
+        - No inheritance (ONLY composition)
+        - No reference types (everything is a value)
+        - No exceptions (ONLY errors)
+        - No try..catch..finally 
+        - No implicity type conversion
+- Performance
+    - Compiled to target platform
+    - Tooling support for cross-compilation
+    - On par with C++
+- Managed (memory) Environment
+    - Builtin Garbage Collector
+- Concurrency Support
+    - Uses lightweight threads called Goroutines (alernatives to OS Threads)
+    - Goroutines are extremely cheap (~4kb vs ~2MB for OS Threads)
+    - Builtin scheduler to schedule the goroutines
+    - Language support for concurrency
+        - go keyword, channel (data type), channel operator ( <- ), for..range & select..case language constructs
+    - APIs support (standard library)
+        - "sync" package
+        - "sync/atomic" packages
+
