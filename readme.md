@@ -38,7 +38,7 @@
         - No reference types (everything is a value)
         - No exceptions (ONLY errors)
         - No try..catch..finally 
-        - No implicity type conversion
+        - No implicit type conversion
 - Performance
     - Compiled to target platform
     - Tooling support for cross-compilation
