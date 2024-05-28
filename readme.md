@@ -152,3 +152,6 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - More than one return results
 - Anonymous functions
 - Functions can be assigned to variables
+- Higher Order Functions
+    - Pass functions as arguments 
+    - Return functions as return values
