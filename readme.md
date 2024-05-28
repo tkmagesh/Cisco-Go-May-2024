@@ -55,3 +55,13 @@
         - "sync" package
         - "sync/atomic" packages
 
+## Compile & Execute
+Compile
+```shell
+go build [file_name.go]
+```
+
+Compile & Execute
+```shell
+go run [file_name.go]
+```
