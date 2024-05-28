@@ -142,3 +142,8 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 
 ## IOTA 
     - auto generated constants
+
+## Programming Constructs
+### if else
+### switch case
+### for
