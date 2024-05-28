@@ -147,3 +147,8 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 ### if else
 ### switch case
 ### for
+
+## Functions
+- More than one return results
+- Anonymous functions
+- Functions can be assigned to variables
