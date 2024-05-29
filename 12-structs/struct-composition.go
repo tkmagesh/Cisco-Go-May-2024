@@ -18,15 +18,32 @@ type PerishableProduct struct {
 	Expiry string
 }
 
-func main() {
-	grapes := PerishableProduct{
+// factory function
+func NewPerishableProduct(id int, name string, cost float64, expiry string) *PerishableProduct {
+	return &PerishableProduct{
 		Product: Product{
-			Id:   100,
-			Name: "Grapes",
-			Cost: 99,
+			Id:   id,
+			Name: name,
+			Cost: cost,
 		},
-		Expiry: "5 Days",
+		Expiry: expiry,
 	}
+}
+
+func main() {
+	/*
+		grapes := PerishableProduct{
+			Product: Product{
+				Id:   100,
+				Name: "Grapes",
+				Cost: 99,
+			},
+			Expiry: "5 Days",
+		}
+	*/
+
+	// Use the factory function
+	grapes := NewPerishableProduct(100, "Grapes", 99, "5 Days")
 	fmt.Printf("%+v\n", grapes)
 	// fmt.Println(grapes.Product.Id)
 	fmt.Println(grapes.Id)
