@@ -194,6 +194,7 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - Memory is NOT allocated and initialized during declaration
 - Slice maintains a pointer to an underlying array
 - use "append()" to dynamically add new items to the slice
+![image](./images/slices.png)
 <!-- 
 ## Modules & Packages
 ## Structs & Struct Composition
