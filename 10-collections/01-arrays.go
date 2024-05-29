@@ -35,6 +35,12 @@ func main() {
 	l2 := [5]int{3, 1, 4, 2, 5}
 	fmt.Println(l1 == l2)
 
+	x1 := [5]int{3, 1, 4, 2, 5}
+	x2 := x1    // create a copy of x1
+	x2[0] = 100 // changing x2 will not affect x1
+	fmt.Printf("x1 = %d, x2 = %d\n", x1, x2)
+
+	// passing around array
 	fmt.Println("Before sorting, nos = ", nos)
 	sort(&nos)
 	fmt.Println("After sorting, nos = ", nos)
