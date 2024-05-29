@@ -195,6 +195,11 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - Slice maintains a pointer to an underlying array
 - use "append()" to dynamically add new items to the slice
 ![image](./images/slices.png)
+
+### Map
+- Typed collection of key/value pairs
+- Initialize using the "make()" 
+
 <!-- 
 ## Modules & Packages
 ## Structs & Struct Composition
