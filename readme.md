@@ -166,8 +166,17 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
     - fmt.Errorf()
     - Custom type (struct) implementing the "error" interface 
 
-<!-- 
 ## Panic & Recovery
+### Panic
+- State of the application where the application execution cannot proceed further
+- Creating a panic
+    - using the "panic()" function
+    - typically the panic is created with an error
+
+### Recovery
+- recover() returns the error that resulted in a panic OR nil if no panic
+<!-- 
+
 ## Pointers
 ## Collections (Array, Slice & Map)
 ## Structs & Struct Composition
