@@ -13,8 +13,14 @@ func main() {
 	}
 }
 
-func genPrimes( /* ? */ ) /* ? */ {
-	/* ? */
+func genPrimes(start, end int) []int {
+	var primes []int
+	for no := start; no <= end; no++ {
+		if isPrime(no) {
+			primes = append(primes, no)
+		}
+	}
+	return primes
 }
 
 func isPrime(no int) bool {
