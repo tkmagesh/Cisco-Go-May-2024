@@ -4,11 +4,13 @@
 - tkmagesh77@gmail.com
 
 ## Schedule
-- Commence      : 09:00 AM
-- Tea Break     : 10:30 AM (20 mins)
-- Lunch Break   : 12:30 PM (1 hour)
-- Tea Break     : 03:00 PM (20 mins)
-- Wind up       : 05:00 PM
+| What          | When |
+| ------------- | ------------------ |
+| Commence      | 09:00 AM |
+| Tea Break     | 10:30 AM (20 mins) |
+| Lunch Break   | 12:30 PM (1 hour) |
+| Tea Break     | 03:00 PM (20 mins) |
+| Wind up       | 05:00 PM |
 
 ## Methodology
 - No powerpoints
@@ -257,12 +259,17 @@ go list -m all
 ### Package
 - internal organization of a module
 - typically a folder
+- Can be nested
 
 ## Structs
 - like classes
 - custom type to hold related data
 
-<!-- 
 ## Methods 
--->
+- Functions with receivers
 
+<!-- 
+## Interfaces
+## Concurrency
+## Http Services (Intro)
+-->
