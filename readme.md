@@ -156,3 +156,21 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
     - Pass functions as arguments 
     - Return functions as return values
 - Deferred functions (functions whose executions are postponed)
+
+## Errors
+- Error is just any object implementing "error" interface
+- Errors are not "thrown" but returned
+- Errors are the last in the list of return results (by convention)
+- Creating an error
+    - errors.New()
+    - fmt.Errorf()
+    - Custom type (struct) implementing the "error" interface 
+
+<!-- 
+## Panic & Recovery
+## Pointers
+## Collections (Array, Slice & Map)
+## Structs & Struct Composition
+## Methods 
+-->
+
