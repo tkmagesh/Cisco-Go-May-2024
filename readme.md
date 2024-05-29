@@ -256,10 +256,13 @@ go list -m all
 
 ### Package
 - internal organization of a module
-- typicall a folder
-<!-- 
+- typically a folder
 
-## Structs & Struct Composition
+## Structs
+- like classes
+- custom type to hold related data
+
+<!-- 
 ## Methods 
 -->
 
