@@ -200,8 +200,36 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - Typed collection of key/value pairs
 - Initialize using the "make()" 
 
-<!-- 
 ## Modules & Packages
+### Module
+- Any code that need to be versioned and deployed together
+- Typically a module is a folder with "go.mod" file
+- "go.mod" file
+    - manifest file for the module with metadata information
+    - name of the module
+        - the complete repo path (recommended)
+    - go runtime version targetted
+    - dependencies
+- Create a module
+```shell
+go mod init <module_name>
+```
+- Execute a module
+```shell
+go run .
+```
+- Build a module
+```shell
+go build .
+OR
+go build -o [bindary_name] .
+```
+
+### Package
+- internal organization of a module
+- typicall a folder
+<!-- 
+
 ## Structs & Struct Composition
 ## Methods 
 -->
