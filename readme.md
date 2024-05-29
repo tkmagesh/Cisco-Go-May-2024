@@ -224,6 +224,35 @@ go build .
 OR
 go build -o [bindary_name] .
 ```
+- To use a 3rd party a package (downloaded in the GOPATH/pkg/mod folder)
+```shell
+go get [module_name]
+```
+- To sync the go.mod file with dependency info
+```shell
+go mod tidy
+```
+- To download the dependencies documented in the go.mod fule
+```shell
+go mod download
+```
+- To localize the dependencies (in "vendor" folder)
+```shell
+go mod vendor
+```
+- To install a go module as a command-line tool (installed in the GOPATH/bin folder)
+```shell
+go install [module_name]
+```
+- Other useful mod commands
+```shell
+go mod graph
+go mod why [module_name]
+go list -m all
+```
+#### Reference
+[Documentation](https://go.dev/ref/mod)
+
 
 ### Package
 - internal organization of a module

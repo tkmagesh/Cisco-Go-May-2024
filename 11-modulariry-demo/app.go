@@ -1,7 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"github.com/fatih/color"
+)
 
 func run() {
-	fmt.Printf("application [%q] executed\n", app_name)
+	color.Red("application [%q] executed\n", app_name)
+	// fmt.Printf("application [%q] executed\n", app_name)
 }
