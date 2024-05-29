@@ -39,6 +39,7 @@
         - No exceptions (ONLY errors)
         - No try..catch..finally 
         - No implicit type conversion
+        - No pointer arithmatic
 - Performance
     - Compiled to target platform
     - Tooling support for cross-compilation
@@ -180,9 +181,15 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 - Address in the memory
 - Pointers are type safe in go
 - Used to pass the data as reference
+- Pointer arithmatic are NOT supported
+
+## Collections (Array, Slice & Map)
+### Array
+- Fixed sized typed collection
+- Memory is allocated and initialized with the default (zero) value of the underlying data type
+- Arrays are just values
 
 <!-- 
-## Collections (Array, Slice & Map)
 ## Modules & Packages
 ## Structs & Struct Composition
 ## Methods 
