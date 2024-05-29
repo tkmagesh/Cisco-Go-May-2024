@@ -175,10 +175,15 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 
 ### Recovery
 - recover() returns the error that resulted in a panic OR nil if no panic
-<!-- 
 
-## Pointers
+## Pointer
+- Address in the memory
+- Pointers are type safe in go
+- Used to pass the data as reference
+
+<!-- 
 ## Collections (Array, Slice & Map)
+## Modules & Packages
 ## Structs & Struct Composition
 ## Methods 
 -->
