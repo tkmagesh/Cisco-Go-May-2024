@@ -186,9 +186,14 @@ GOOS=linux GOARCH=amd64 go build 01-hello-world.go
 ## Collections (Array, Slice & Map)
 ### Array
 - Fixed sized typed collection
-- Memory is allocated and initialized with the default (zero) value of the underlying data type
+- Memory is allocated and initialized with the default (zero) value of the underlying data type during declaration
 - Arrays are just values
 
+### Slice
+- Varying sized typed collection
+- Memory is NOT allocated and initialized during declaration
+- Slice maintains a pointer to an underlying array
+- use "append()" to dynamically add new items to the slice
 <!-- 
 ## Modules & Packages
 ## Structs & Struct Composition
