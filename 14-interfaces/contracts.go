@@ -35,9 +35,46 @@ func (r Rectangle) Area() float64 {
 	return r.Length * r.Breadth
 }
 
-func PrintArea(x ?){
+/*
+func PrintArea(x interface{}) {
+	switch val := x.(type) {
+	case Circle:
+		fmt.Println("Area :", val.Area())
+	case Rectangle:
+		fmt.Println("Area :", val.Area())
+	default:
+		fmt.Println("Area() method not supported")
+	}
+}
+*/
+
+// runtime type check
+/*
+func PrintArea(x interface{}) {
+	switch val := x.(type) {
+	case interface{ Area() float64 }: // asserting if x is any object with Area() method
+		fmt.Println("Area :", val.Area())
+	default:
+		fmt.Println("Area() method not supported")
+	}
+}
+*/
+
+func PrintArea(x interface{ Area() float64 }) {
 	fmt.Println("Area :", x.Area())
 }
+
+/*
+Create a Perimeter method for both Circle & Rectangle
+	Circle Perimeter = 2 * pi * radius
+	Rectangle Perimeter = 2 * (Length + Breadth)
+
+Create a "PrintPerimeter" function that will print the perimeter of the given object
+
+In the main() function
+	Use the PrintPerimeter function to print the perimeter of circle
+	Use the PrintPerimeter function to print the perimeter of rectangle
+*/
 
 func main() {
 	/*
@@ -54,4 +91,6 @@ func main() {
 	r := Rectangle{Length: 10, Breadth: 12}
 	// fmt.Println("Area :", r.Area())
 	PrintArea(r)
+
+	// PrintArea(100)
 }
