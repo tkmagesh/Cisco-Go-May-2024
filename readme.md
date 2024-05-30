@@ -23,7 +23,7 @@
 ## Software Requirements
 - Go tools (https://go.dev/dl)
     - Verification
-        ```go
+        ```shell
         go version
         ```
 - [Visual Studio Code](https://code.visualstudio.com)
@@ -268,8 +268,12 @@ go list -m all
 ## Methods 
 - Functions with receivers
 
-<!-- 
 ## Interfaces
+- Contracts
+- Interfaces are implicitly implemented
+
+<!-- 
+
 ## Concurrency
 ## Http Services (Intro)
 -->
