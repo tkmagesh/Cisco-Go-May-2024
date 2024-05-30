@@ -271,9 +271,32 @@ go list -m all
 ## Interfaces
 - Contracts
 - Interfaces are implicitly implemented
+- Can be composed
 
+## Concurrency Programming
+- Designing with multiple execution paths
+- Typically achieved with OS Threads
+- OS Threads are costly
+    - ~2MB of memory
+    - Creation & Destruction of threads are costly
+    - Thread context switch are time consuming
+![image](./images/os-thread-concurrency.png)
+
+## GO Concurrency
+- A concurrent operation is represented as a light-weight thread called "goroutine"
+- Goroutines are cheap
+    - ONLY ~4kb per goroutine
+    - Minimum thread context switch
+- Built in scheduler to schedule the goroutines
+![image](./images/go-concurrency.png)
+
+### Concurrency Features in Go
+- Concurrency support is built in the language itself
+    - go "keyword", channel "data type", channel "operator" ( <- ), range & select-case "constructs"
+- APIs
+    - sync package
+    - sync/atomic package
 <!-- 
 
-## Concurrency
 ## Http Services (Intro)
 -->
