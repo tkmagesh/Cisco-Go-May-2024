@@ -324,7 +324,6 @@ ch := make(chan int)
 - Behavior
 ![image](./images/channel-behavior.png)
 
-<!-- 
 
 ## Http Services (Intro)
--->
+- An application that listens and repond to http requests
