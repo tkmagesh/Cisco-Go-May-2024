@@ -296,6 +296,34 @@ go list -m all
 - APIs
     - sync package
     - sync/atomic package
+
+#### Channels
+- Data type designed to enable communication between goroutines in a concurrent safe manner
+- Declaration
+```go
+var ch chan int
+```
+- Initialization
+```go
+ch = make(chan int)
+```
+- Declaration & Initialization
+```go
+ch := make(chan int)
+```
+- Operation
+    - Using the channel operator ( <- )
+    - Send Operation
+    ```go
+        ch <- 100
+    ```
+    - Receive Operation
+    ```go
+        data := <- ch
+    ```
+- Behavior
+![image](./images/channel-behavior.png)
+
 <!-- 
 
 ## Http Services (Intro)
