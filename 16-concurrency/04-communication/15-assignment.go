@@ -44,7 +44,6 @@ func main() {
 		}()
 		return ch
 	}()
-
 	wg := sync.WaitGroup{}
 
 	wg.Add(1)
